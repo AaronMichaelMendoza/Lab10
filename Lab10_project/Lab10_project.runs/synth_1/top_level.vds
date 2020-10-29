@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 29 13:32:50 2020
+# Process ID: 4632
+# Current directory: C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/Lab10_project.runs/synth_1
+# Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/Lab10_project.runs/synth_1/top_level.vds
+# Journal file: C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/Lab10_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5288
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv:31]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv:32]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv:33]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv:35]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1024.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/top_level.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'top_lab9' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/top_lab9.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/register.sv:23]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv:23]
+	Parameter N bound to: 8 - type: integer 
+	Parameter ADD bound to: 0 - type: integer 
+	Parameter SUB bound to: 1 - type: integer 
+	Parameter AND bound to: 2 - type: integer 
+	Parameter OR bound to: 3 - type: integer 
+	Parameter XOR bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (2#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_lab9' (3#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/top_lab9.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'show2c' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'show2c' (4#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/counter.sv:23]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (5#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/counter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sseg4' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/sseg4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'eleven_bit_BCD' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/eleven_bit_BCD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'add3' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/add3.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'add3' (6#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/add3.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'eleven_bit_BCD' (7#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/eleven_bit_BCD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/mux2.sv:23]
+	Parameter BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/mux4.sv:23]
+	Parameter BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (9#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/mux4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sseg_decoder' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/sseg_decoder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sseg_decoder' (10#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/sseg_decoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'an_decoder' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/an_decoder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'an_decoder' (11#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/an_decoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/mux2.sv:23]
+	Parameter BITS bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (11#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sseg4' (12#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/sseg4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (13#1) [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/top_level.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1024.957 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/Basys3_10.xdc]
+Finished Parsing XDC File [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/Basys3_10.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/Basys3_10.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1068.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1068.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'to_one_reg' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'to_zero_reg' [C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c.sv:41]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 15    
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 15    
+	   4 Input    4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     3|
+|4     |LUT2   |     8|
+|5     |LUT3   |    24|
+|6     |LUT4   |     2|
+|7     |LUT5   |    16|
+|8     |LUT6   |    28|
+|9     |FDCE   |    36|
+|10    |LD     |    15|
+|11    |IBUF   |    17|
+|12    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1068.867 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.867 ; gain = 43.910
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1068.867 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 7 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1068.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  LD => LDCE: 8 instances
+  LD => LDCE (inverted pins: G): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1068.867 ; gain = 43.910
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/Lab10_project.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 13:33:29 2020...

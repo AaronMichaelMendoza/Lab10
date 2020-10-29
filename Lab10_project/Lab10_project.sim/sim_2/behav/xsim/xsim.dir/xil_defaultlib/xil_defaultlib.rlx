@@ -1,0 +1,10 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/Lab10_project.sim/sim_2/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/alu.sv,1603385333,systemVerilog,,C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/register.sv,,alu,,,,,,,,
+C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/register.sv,1603382705,systemVerilog,,C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/top_lab9.sv,,register,,,,,,,,
+C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c.sv,1603994795,systemVerilog,,C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c_test.sv,,show2c,,,,,,,,
+C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c_test.sv,1603994603,systemVerilog,,,,show2c_test,,,,,,,,
+C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/top_lab9.sv,1603386500,systemVerilog,,,,top_lab9,,,,,,,,

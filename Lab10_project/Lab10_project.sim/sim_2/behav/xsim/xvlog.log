@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show2c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/aaron_mendoza1/Documents/GitHub/Lab10/Lab10_project/codedirectory/show2c_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show2c_test
