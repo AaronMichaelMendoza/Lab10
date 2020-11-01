@@ -68,10 +68,15 @@
 
 \section*{Summary}
 
-Type the summary of your experiment and results here.  
+The purpose of this lab is to implement a clock-driven 4 digit display onto a Basys3 board using a counter module and previously built modules in other labs.
 
+The first module built was a counter module. This is crucial to the lab because.... It has two inputs, clock and reset and outputs two of the most significant bits. In order to keep the counter going, it adds one to the previous value at every positive edge of the clock. Once all the bits hit 1, then the counter starts over at zero. 
 
+The second module built was a wrapper that combined my seven segment display from lab 8 with the counter. The output of the counter becomes the input digit select of the seven segment display. I then generated this as a bitstream programmed it into my board to see if I chose the right number of bits, and since my seven segment display was not dim, I knew that 20 bits was the right number.
 
+The third module built was a show 2's compliment module. This takes an input of 8 bits and outputs the two's compliment of that number in sixteen bits. If the data input is already positive, then the number is just passed to the output with zero's added to the left of the original bits. If the data input is negative, then the bits are flipped and 8 one's are added to the left of the original bits. The most significant bit of the data input is read to tell the program whether or not the number is positive or negative, outputting the sign of the input as well as the changed input or unchanged input by using a mux.
+
+The final module built combined all of the modules together. The ALU from lab 9 takes in data and outputs it into the show2c module. The output of the show2c module goes into the data and sign inputs of the sseg4 module, whil the clk and reset inputs go into the counter module which controls the digits select of the sseg4 module. This was then programmed into my Basys3 board.
 
 
 \section*{Results}
