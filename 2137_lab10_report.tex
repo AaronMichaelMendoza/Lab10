@@ -53,7 +53,7 @@
 	\lstinputlisting[style=Verilog,#1]{#2}
 }
 
-
+\usepackage[section]{placeins}
 
 
 %======================================================
@@ -76,12 +76,59 @@ Type the summary of your experiment and results here.
 
 \section*{Results}
 
-In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.
+
+\subsection*{Simulation Waveforms}
+\begin{figure}[ht]\centering
+\includegraphics[width=1\textwidth,trim=19cm 15cm 0.5cm 4.5cm,clip]{counter_test_screenshot}
+	\caption{Counter Simulation with N=4}
+	\label{fig:sim_with_table}
+\end{figure}
+
+
+\begin{figure}[ht]\centering
+\includegraphics[width=1\textwidth,trim=19cm 15cm 0.5cm 4.5cm,clip]{show2c_test_screenshot}
+	\caption{Show 2's Comp Simulation}
+	\label{fig:sim_with_table}
+\end{figure}
+
+\FloatBarrier
+
+\subsection*{Basys3 Board Pictures}
+\begin{figure}[ht]\centering
+\includegraphics[width=1\textwidth,trim=15cm 15cm 0.5cm 4.5cm,clip]{count_board}
+	\caption{7-seg display after programming the count/sseg wrapper bitstream onto the Basys3 board}
+	\label{fig:sim_with_table}
+\end{figure}
+
+\begin{figure}[ht]\centering
+\includegraphics[width=1\textwidth,trim=15cm 15cm 0.5cm 4.5cm,clip]{pos_number}
+	\caption{7-seg display after adding 16 and 9}
+	\label{fig:sim_with_table}
+\end{figure}
+
+
+\begin{figure}[ht]\centering
+\includegraphics[width=1\textwidth,trim=15cm 15cm 0.5cm 4.5cm,clip]{neg_number}
+	\caption{7-seg display after subtracting 32 from 19}
+	\label{fig:sim_with_table}
+\end{figure}
+
+
 
 
 \section*{Code}
 
-Include all of the code you wrote or modified here.
+\Verilog[firstline=22, lastline=41, caption=Counter Module Code]{Lab10_project/codedirectory/counter.sv}|
+
+\Verilog[firstline=22, lastline=39, caption=Counter Test Module Code]{Lab10_project/codedirectory/counter_test.sv}|
+
+\Verilog[firstline=22, lastline=48, caption=Counter 7-seg Module Code]{Lab10_project/codedirectory/count_sseg_wrapper.sv}|
+
+\Verilog[firstline=22, lastline=51, caption=Show 2's Comp Module Code]{Lab10_project/codedirectory/show2c.sv}|
+
+\Verilog[firstline=22, lastline=42, caption=Show 2's Comp Test Module Code]{Lab10_project/codedirectory/show2c_test.sv}|
+
+\Verilog[firstline=22, lastline=67, caption=Top-Level Module Code]{Lab10_project/codedirectory/top_level.sv}|
 
 
 \end{document}
