@@ -70,7 +70,7 @@
 
 The purpose of this lab is to implement a clock-driven 4 digit display onto a Basys3 board using a counter module and previously built modules in other labs.
 
-The first module built was a counter module. This is crucial to the lab because.... It has two inputs, clock and reset and outputs two of the most significant bits. In order to keep the counter going, it adds one to the previous value at every positive edge of the clock. Once all the bits hit 1, then the counter starts over at zero. 
+The first module built was a counter module. This is crucial to the lab because it enables the display to have all four digits on at the same time. It has two inputs, clock and reset and outputs two of the most significant bits. In order to keep the counter going, it adds one to the previous value at every positive edge of the clock. Once all the bits hit 1, then the counter starts over at zero. 
 
 The second module built was a wrapper that combined my seven segment display from lab 8 with the counter. The output of the counter becomes the input digit select of the seven segment display. I then generated this as a bitstream programmed it into my board to see if I chose the right number of bits, and since my seven segment display was not dim, I knew that 20 bits was the right number.
 
